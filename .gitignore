@@ -1,0 +1,57 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env/
+.DS_Store
+
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+
+# Configuración de IDEs
+.vscode/
+.idea/
+
+# Logs y salidas
+*.log
+*.out
+
+# Reportes de pruebas (HTML, XML, etc)
+reports/
+*.html
+*.xml
+
+# Jupyter
+.ipynb_checkpoints
+
+# Selenium/Webdriver
+*.db
+*.crdownload
+*.lock
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Test screenshots
+screenshots/
+*.png
+*.jpeg
+
+# VS Code debugger
+.vscode/
+*.code-workspace
