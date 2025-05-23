@@ -1,0 +1,7 @@
+app:
+  base_url: "https://the-internet.herokuapp.com/login"
+  browser: "chrome"
+  credentials:
+    username: tomsmith # Referencia a .env
+    password: SuperSecretPassword!
+  headless: false

@@ -1,0 +1,5 @@
+base_url: "https://prod.example.com"
+credentials:
+  username: ${PROD_USER}
+  password: ${PROD_PASS}
+headless: true

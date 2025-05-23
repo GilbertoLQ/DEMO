@@ -23,15 +23,43 @@ Sitio bajo prueba: [https://the-internet.herokuapp.com/login](https://the-intern
    ```bash
    pip install -r requirements.txt
    ```
+3. Ejecutar test
+   ```bash
+   pytest -v
+   ```
+   o
+   ```bash
+   pytest --html=report.html
+   ```
 
-## Example:
+## Manejo de ENV
 
-🔐 Configuración de credenciales
+- Las credenciales se definen en los YAML de configuración. No se suben valores reales, solo ejemplos
+- Se incluye un módulo (s3_loader.py) que simula cómo se podría obtener y leer una configuración YAML desde un bucket de Amazon S3.
 
-- Este proyecto usa un archivo .env para manejar las credenciales de acceso sin exponerlas directamente en el código.
-- Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
+## Schema demo
 
-USERNAME=demo_user
-PASSWORD=demo_pass
-
-## ⚠️ El archivo .env está en el .gitignore y no se sube al repositorio, así que asegúrate de crearlo localmente antes de correr las pruebas.
+<!-- DEMO/
+├── 📂 config/
+│   ├── 📂 envs/                  # YAMLs locales (simulan S3)
+│   │   ├── 📜 dev.yml            # Config desarrollo
+│   │   ├── 📜 qa.yml            # Config qa
+│   │   └── 📜 prod.yml           # Config producción
+│   ├── 📂 schemas/               # Modelos Pydantic
+│   │   ├── 📜 app.py             # AppConfig
+│   │   ├── 📜 auth.py            # Credentials
+│   │   └── 📜 db.py              # DatabaseConfig
+│   ├── 📂 loaders/               # Cargadores de config
+│   │   ├── 📜 local_loader.py    # Loader (local)
+│   │   └── 📜 s3_loader.py       # Ejemplo (S3)
+│   └── 📜 __init__.py            # Interface principal
+├── 📂 pages/                     # Page Objects
+│   └── 📜 login_page.py
+├── 📂 tests/
+│   └── 📜 test_login.py
+├── 📂 utils/
+│   ├── 📜 driver_manager.py      # Manejo de WebDriver
+│   └── 📜 helpers.py             # Funciones auxiliares
+├── 📜 conftest.py                # Fixtures de pytest
+├── 📜 pytest.ini                 # Config pytest
+└── 📜 requirements.txt           # Dependencias

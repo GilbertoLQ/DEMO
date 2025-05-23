@@ -1,0 +1,5 @@
+base_url: "https://qa.example.com"
+credentials:
+  username: ${QA_USER} # Referencia a .env
+  password: ${QA_PASS}
+headless: false
