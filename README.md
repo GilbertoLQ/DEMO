@@ -37,8 +37,6 @@ Sitio bajo prueba: [https://the-internet.herokuapp.com/login](https://the-intern
 - Las credenciales se definen en los YAML de configuración. No se suben valores reales, solo ejemplos
 - Se incluye un módulo (s3_loader.py) que simula cómo se podría obtener y leer una configuración YAML desde un bucket de Amazon S3.
 
-## Schema demo
-
 <!-- DEMO/
 ├── 📂 config/
 │   ├── 📂 envs/                  # YAMLs locales (simulan S3)
