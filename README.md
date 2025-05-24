@@ -32,32 +32,19 @@ Sitio bajo prueba: [https://the-internet.herokuapp.com/login](https://the-intern
    pytest --html=report.html
    ```
 
+## Advertencia
+
+Los archivos que estan en estas carpetas estan vacias:
+
+- ./integration
+- ./performance
+- ./test/e2e/components
+- ./test/e2e/flows
+- ./test/e2e/validation
+- ./test/e2e/pages/dashboard
+- ./test/e2e/pages/profile
+
 ## Manejo de ENV
 
 - Las credenciales se definen en los YAML de configuración. No se suben valores reales, solo ejemplos
 - Se incluye un módulo (s3_loader.py) que simula cómo se podría obtener y leer una configuración YAML desde un bucket de Amazon S3.
-
-<!-- DEMO/
-├── 📂 config/
-│   ├── 📂 envs/                  # YAMLs locales (simulan S3)
-│   │   ├── 📜 dev.yml            # Config desarrollo
-│   │   ├── 📜 qa.yml            # Config qa
-│   │   └── 📜 prod.yml           # Config producción
-│   ├── 📂 schemas/               # Modelos Pydantic
-│   │   ├── 📜 app.py             # AppConfig
-│   │   ├── 📜 auth.py            # Credentials
-│   │   └── 📜 db.py              # DatabaseConfig
-│   ├── 📂 loaders/               # Cargadores de config
-│   │   ├── 📜 local_loader.py    # Loader (local)
-│   │   └── 📜 s3_loader.py       # Ejemplo (S3)
-│   └── 📜 __init__.py            # Interface principal
-├── 📂 pages/                     # Page Objects
-│   └── 📜 login_page.py
-├── 📂 tests/
-│   └── 📜 test_login.py
-├── 📂 utils/
-│   ├── 📜 driver_manager.py      # Manejo de WebDriver
-│   └── 📜 helpers.py             # Funciones auxiliares
-├── 📜 conftest.py                # Fixtures de pytest
-├── 📜 pytest.ini                 # Config pytest
-└── 📜 requirements.txt           # Dependencias

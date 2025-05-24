@@ -21,10 +21,10 @@ __pycache__/
 *.log
 *.out
 
-# Reportes de pruebas (HTML, XML, etc)
-reports/
-*.html
-*.xml
+# # Reportes de pruebas (HTML, XML, etc)
+# reports/
+# *.html
+# *.xml
 
 # Jupyter
 .ipynb_checkpoints
@@ -48,9 +48,9 @@ dist/
 *.egg-info/
 
 # Test screenshots
-screenshots/
-*.png
-*.jpeg
+# screenshots/
+# *.png
+# *.jpeg
 
 # VS Code debugger
 .vscode/
