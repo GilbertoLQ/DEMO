@@ -31,6 +31,12 @@ Sitio bajo prueba: [https://the-internet.herokuapp.com/login](https://the-intern
    ```bash
    pytest --html=report.html
    ```
+##Ejecutar mobile
+1. Clona el reporsitorio [https://github.com/GilbertoLQ/expo-app]
+2. corre el servidor de appium
+3. ejecutar test pytest test/e2e/mobile
+
+Importante tener instalado toda la configuracion de appium para ios, puedes usar appium-doctor para verificar todo
 
 ## Advertencia
 
